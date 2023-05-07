@@ -17,14 +17,14 @@ return [
 
     'super_admin' => [
         'enabled' => true,
-        'name' => 'super_admin',
+        'name' => \App\Enums\Role::SUPER_ADMIN->value,
         'define_via_gate' => false,
         'intercept_gate' => 'before', // after
     ],
 
     'filament_user' => [
         'enabled' => true,
-        'name' => 'filament_user',
+        'name' => \App\Enums\Role::FILAMENT_USER->value,
     ],
 
     'permission_prefixes' => [
